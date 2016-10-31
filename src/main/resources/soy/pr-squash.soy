@@ -1,0 +1,19 @@
+{namespace org.christiangalsterer.bitbucket.server.prsquash}
+
+/**
+ * @param prSquash
+ */
+{template .fragment}
+// TODO: Use AUI templates when margin is fixed on first checkbox. https://ecosystem.atlassian.net/browse/AUI-2330
+    {call widget.aui.form.checkbox}
+        {param id: 'prSquash' /}
+        {param descriptionContent}
+            {getText('org.christiangalsterer.bitbucket.server.prsquash.prsquashmergecheck.description')}
+        {/param}
+        {param labelContent}
+            {getText('org.christiangalsterer.bitbucket.server.prsquash.prsquashmergecheck.label')}
+        {/param}
+        {param checked: $prSquash /}
+        {param initialValue: 'true' /}
+    {/call}
+{/template}
