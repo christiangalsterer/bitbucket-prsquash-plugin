@@ -10,12 +10,13 @@ The plugin is available in the https://marketplace.atlassian.com/plugins/org.chr
 
 == 1.0.0 (2016-10-30)
 Initial release providing the following features:
+
 * Pull request merge check which checks that all commits in the source branch are merged into a single commit.
 
 == 1.1.0 (2016-11-05)
 New Features:
-* Support to configure the setting via the standard Bitbucket REST API to configure Pull request settings for a project. The key is "requiredPullRequestSquash" using "true" or "false as values.
 
+* Support to configure the Pull request settings for a project via the standard https://developer.atlassian.com/bitbucket/server/docs/latest/how-tos/command-line-rest.html[Bitbucket REST API]. The key is "requiredPullRequestSquash" using "true" or "false as values.
 
 = Documentation
 
