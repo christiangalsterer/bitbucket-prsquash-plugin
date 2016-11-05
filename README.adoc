@@ -12,6 +12,32 @@ The plugin is available in the https://marketplace.atlassian.com/plugins/org.chr
 Initial release providing the following features:
 * Pull request merge check which checks that all commits in the source branch are merged into a single commit.
 
+== 1.1.0 (2016-11-05)
+New Features:
+* Support to configure the setting via the standard Bitbucket REST API to configure Pull request settings for a project. The key is "requiredPullRequestSquash" using "true" or "false as values.
+
+
+= Documentation
+
+== REST API
+
+The plugin is integrated into the standard Bitbucket REST API.
+
+=== Get PR Squash Setting for a repository
+In order to get the current setting for a repository execute the following request:
+
+URL: http://example.com/rest/api/1.0/projects/{projectKey}/repos/{repositorySlug}/settings/pull-requests
+Method: GET
+
+The settings is saved in the "requiredPullRequestSquash" field.
+
+=== Set PR Squash Setting for a repository
+In order to get the current setting for a repository execute the following request:
+
+URL: http://example.com/rest/api/1.0/projects/{projectKey}/repos/{repositorySlug}/settings/pull-requests
+Method: POST
+Body: {"requiredPullRequestSquash":true}
+
 = License
 
 [source]

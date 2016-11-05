@@ -42,6 +42,9 @@
     <form-fragment key="prSquashFragment" location="bitbucket.page.repository.settings.pullRequests"
                    class="org.christiangalsterer.bitbucket.server.PullRequestSquashFormFragment" weight="1000"/>
 
+    <rest-fragment key="pullRequestSquashRestFragment" location="bitbucket.repository.settings.pullRequests"
+                   class="org.christiangalsterer.bitbucket.server.PullRequestSquashRestFragment" weight="1000"/>
+
     <merge-check key="prSquashMergeCheck" class="org.christiangalsterer.bitbucket.server.PullRequestSquashMergeRequestCheck"/>
 
 </atlassian-plugin>
